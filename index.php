@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 pg_close($conn);
 
 ?>
-                    
+
                     <div class="container">
                         <ul class="user-menu">
                             <li><a href="#popup-login"  data-toggle="modal"><i class="fa fa-file-text-o"></i> Register Now</a></li>
@@ -749,8 +749,8 @@ pg_close($conn);
                     <div class="container text-center">
                         <form action="/index.php" method="post">
                             Name: <input type="text" name="name"><br>
-                            Begin Date: <input type="text" name="begin" placeholder="Nov 3, 17:00"><br>
-                            End Date: <input type="text" name="end" placeholder="Nov 3, 19:00"><br>
+                            Begin Date: <input type="text" name="begin" placeholder="Nov 3 2018 17:00"><br>
+                            End Date: <input type="text" name="end" placeholder="Nov 3 2018, 19:00"><br>
                             Location: <input type="text" name="location"><br>
                             Price: <input type="text" name="price"><br>
                             Description: <textarea name="description"></textarea><br>
