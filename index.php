@@ -65,7 +65,7 @@ $conn = pg_connect(getenv("DATABASE_URL"));
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   $qry = "INSERT INTO events (description) VALUES (
-  '".$_POST['description']."');";
+  'beatles 4ever');";
   echo $qry;
   $res = pg_query($conn, $qry or die('Query failed: ' . pg_last_error()));
   echo pg_result_error($res);
