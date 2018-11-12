@@ -14,8 +14,16 @@ echo "</table>\n";
 // Free resultset
 pg_free_result($result);
 
+if (_$SERVER['REQUEST_METHOD'] === 'POST'){
+  $res = pg_insert($conn, 'events', $_POST);
+    if ($res) {
+      echo "POST data is successfully logged\n";
+  } else {
+      echo "User must have sent wrong inputs\n";
+  }
+}
 // Closing connection
-pg_close($dbconn);
+pg_close($conn);
 
 ?>
 
@@ -736,7 +744,7 @@ pg_close($dbconn);
                     </div>
 
                     <div class="container text-center">
-                        <form action="/submit_event.php" method="post">
+                        <form action="/index.php" method="post">
                             Name: <input type="text" name="name"><br>
                             Begin Date: <input type="text" name="begin" placeholder="Nov 3, 17:00"><br>
                             End Date: <input type="text" name="end" placeholder="Nov 3, 19:00"><br>
