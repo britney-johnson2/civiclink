@@ -922,6 +922,7 @@ pg_close($conn);
     <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
     <script src="assets/plugins/placeholdem.min.js"></script>
     <script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+    <script src="assets/plugins/moment.js"></script>
     <script src="assets/plugins/jquery.easing.min.js"></script>
     <script src="assets/plugins/smooth-scrollbar.min.js"></script>
 
