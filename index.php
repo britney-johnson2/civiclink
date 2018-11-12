@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
       echo "POST data is successfully logged\n";
   } else {
       echo "User must have sent wrong inputs\n";
+      echo pg_result_error($res);
   }
 }
 // Closing connection
