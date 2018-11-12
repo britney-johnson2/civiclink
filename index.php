@@ -64,10 +64,7 @@
 $conn = pg_connect(getenv("DATABASE_URL"));
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-  $qry = "INSERT INTO events (name, location, price, description) VALUES (
-  '".$_POST['name']."',
-  '".$_POST['location']."', 
-  '".$_POST['price']."',
+  $qry = "INSERT INTO events (description) VALUES (
   '".$_POST['description']."');";
   echo $qry;
   $res = pg_query($conn, $qry or die('Query failed: ' . pg_last_error()));
