@@ -914,7 +914,10 @@ pg_close($conn);
     <script src="assets/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
     <script src="assets/plugins/modernizr.custom.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/collapse.js"></script>
     <script src="assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.com/libraries/moment.js"></script>
     <script src="assets/plugins/superfish/js/superfish.js"></script>
     <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
     <script src="assets/plugins/placeholdem.min.js"></script>
