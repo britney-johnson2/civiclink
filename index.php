@@ -14,7 +14,7 @@ echo "</table>\n";
 // Free resultset
 pg_free_result($result);
 
-if (_$SERVER['REQUEST_METHOD'] === 'POST'){
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   $res = pg_insert($conn, 'events', $_POST);
     if ($res) {
       echo "POST data is successfully logged\n";
