@@ -16,7 +16,7 @@ pg_free_result($result);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   $res = pg_insert($conn, 'events', $_POST);
-  echo $_POST;
+  print_r($_POST);
     if ($res) {
       echo "POST data is successfully logged\n";
   } else {
