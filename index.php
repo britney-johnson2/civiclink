@@ -60,6 +60,15 @@
                 <div class="top-line">
 
 <?php
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+$log = new Logger('name');
+$log->pushHandler(new StreamHandler('php://stderr', Logger::WARNING));
+
+$log->addWarning('Foo');
+
 $conn = pg_connect(getenv("DATABASE_URL"));
 $query = 'SELECT * FROM events';
 $result = pg_query($query) or die('Query failed: ' . pg_last_error());
