@@ -61,28 +61,7 @@
 
 <?php
 
-// use Monolog\Logger;
-// use Monolog\Handler\StreamHandler;
-
-// $log = new Logger('name');
-// $log->pushHandler(new StreamHandler('php://stderr', Logger::WARNING));
-
-// $log->addWarning('Foo');
-
 $conn = pg_connect(getenv("DATABASE_URL"));
-$query = 'SELECT * FROM events';
-$result = pg_query($query) or die('Query failed: ' . pg_last_error());
-echo "<table>\n";
-while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
-    echo "\t<tr>\n";
-    foreach ($line as $col_value) {
-        echo "\t\t<td>$col_value</td>\n";
-    }
-    echo "\t</tr>\n";
-}
-echo "</table>\n";
-
-pg_free_result($result);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   $res = pg_query($conn, "
@@ -90,15 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     (name, begintime, endtime, location, price, description)
     VALUES ('".$_POST['name']."','".$_POST['begin']."',
             '".$_POST['end']."','".$_POST['location']."',
-            '".$_POST['price']."','".$_POST['description']."');");
-  echo "Error Last " . pg_last_error($conn);
-  print_r($_POST);
-    if ($res) {
-      echo "POST data is successfully logged\n";
-  } else {
-      echo "Error Result " . pg_result_error($res);
-      echo "User must have sent wrong inputs\n";
-  }
+            '".$_POST['price']."','".$_POST['description']."');"
+    or die('Query failed: ' . pg_last_error()););
 }
 // Closing connection
 pg_close($conn);
