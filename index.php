@@ -86,8 +86,8 @@ pg_free_result($result);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   $res = pg_insert($conn, 'events', $_POST);
-  echo "Error Result " + pg_result_error($res);
-  echo "Error Last " + pg_last_error($conn);
+  echo "Error Result " . pg_result_error($res);
+  echo "Error Last " . pg_last_error($conn);
   print_r($_POST);
     if ($res) {
       echo "POST data is successfully logged\n";
