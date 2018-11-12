@@ -736,6 +736,30 @@ pg_close($conn);
                     <div class="container text-center">
                         <form action="/index.php" method="post">
                             Name: <input type="text" name="name"><br>
+
+        <div class="container">
+            <div class='col-md-5'>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker6'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-5'>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker7'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
                             Begin Date: <input type="text" name="begin" placeholder="Nov 3 2018 17:00"><br>
                             End Date: <input type="text" name="end" placeholder="Nov 3 2018, 19:00"><br>
                             Location: <input type="text" name="location"><br>
@@ -962,6 +986,21 @@ pg_close($conn);
         });
 
     </script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
 
 </body>
 </html>
