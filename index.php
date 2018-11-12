@@ -85,12 +85,13 @@ echo "</table>\n";
 pg_free_result($result);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-  $res = pg_query($conn, "
-    INSERT INTO events 
-    (name, begintime, endtime, location, price, description)
-    VALUES ('".$_POST['name']."','".$_POST['begin']."',
-            '".$_POST['end']."','".$_POST['location']."',
-            '".$_POST['price']."','".$_POST['description']."');");
+  // $res = pg_query($conn, "
+  //   INSERT INTO events 
+  //   (name, begintime, endtime, location, price, description)
+  //   VALUES ('".$_POST['name']."','".$_POST['begin']."',
+  //           '".$_POST['end']."','".$_POST['location']."',
+  //           '".$_POST['price']."','".$_POST['description']."');");
+  $res = pg_insert($conn, "events", $_POST);
   echo "Error Last " . pg_last_error($conn);
   print_r($_POST);
     if ($res) {
