@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     VALUES ('".$_POST['name']."','".$_POST['begin']."',
             '".$_POST['end']."','".$_POST['location']."',
             '".$_POST['price']."','".$_POST['description']."');"
-    or die('Query failed: ' . pg_last_error()););
+    or die('Query failed: ' . pg_last_error()));
 }
 // Closing connection
 pg_close($conn);
