@@ -11,17 +11,17 @@ while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
     echo "\t</tr>\n";
 }
 echo "</table>\n";
-// Free resultset
+
 pg_free_result($result);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   $res = pg_insert($conn, 'events', $_POST);
+  echo pg_result_error($res);
   print_r($_POST);
     if ($res) {
       echo "POST data is successfully logged\n";
   } else {
       echo "User must have sent wrong inputs\n";
-      echo pg_result_error($res);
   }
 }
 // Closing connection
