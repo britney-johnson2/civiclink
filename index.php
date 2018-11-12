@@ -64,7 +64,7 @@
 $conn = pg_connect(getenv("DATABASE_URL"));
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-  $qry = "INSERT INTO events (name, begintime, endtime, location, price, description) VALUES (
+  $qry = "INSERT INTO events (name, location, price, description) VALUES (
   '".$_POST['name']."',
   '".$_POST['location']."', 
   '".$_POST['price']."',
