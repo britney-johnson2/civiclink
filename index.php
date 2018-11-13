@@ -8,15 +8,7 @@
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
         <title>CivicLink</title>
-=======
-<<<<<<< HEAD
-        <title>CivicLinkJacob</title>
-=======
-        <title>CivicLink 2</title>
->>>>>>> 65af3ed108b1134ca83c23d39f75cc47be16eeff
->>>>>>> f7f30fc364fbe3ff6749f5a6ed13d17d67b48d38
 
         <!-- Favicons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
