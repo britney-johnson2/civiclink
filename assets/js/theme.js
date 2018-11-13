@@ -268,7 +268,7 @@ var theme = function () {
             handleBootstrapDate();
             handleHoverClass();
             handleSuperFish();
-            handleSmoothScroll();            
+            handleSmoothScroll();
             handleToTopButton();
             handleAnimatedHeader();
             handleTabsFAQ();
@@ -489,7 +489,7 @@ var theme = function () {
                 var mapOptions = {
                     scrollwheel: false,
                     zoom: 10,
-                    center: new google.maps.LatLng(40.9807648, 28.9866516) // map coordinates
+                    center: new google.maps.LatLng(42.361145, -71.057083) // map coordinates
                 };
                 map = new google.maps.Map(document.getElementById('map-canvas'),
                         mapOptions);
@@ -515,49 +515,102 @@ $(document).ready(function () {
         if ($('#map-canvas1').length) {
 
             var map;
-            var marker, marker2, marker3, marker4, marker5, marker6, marker7, marker8;
+            var marker, marker2, marker3, marker4, marker5, marker6, marker7, marker8, marker9, marker10;
             var infowindow;
 
             var image = 'assets/img/icon-google-map.png'; // marker icon
             google.maps.event.addDomListener(window, 'load', function () {
                 var mapOptions = {
                     scrollwheel: false,
-                    zoom: 10,
-                    center: new google.maps.LatLng(41.079379, 28.9984466) // map coordinates
+                    zoom: 11,
+                    center: new google.maps.LatLng(42.361145, -71.057083) // map coordinates
                 };
 
                 map = new google.maps.Map(document.getElementById('map-canvas1'),
                         mapOptions);
+                //Events: Cambridge City Hall
                 marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(41.0096559, 28.9755535), // marker coordinates
+                    position: new google.maps.LatLng(42.367292, -71.105660), // marker coordinates
                     map: map,
                     icon: image,
                     title: 'Hello World!'
                 });
+                //Event at Visiting nurses association
                 marker2 = new google.maps.Marker({
-                    position: new google.maps.LatLng(41.007135, 28.910556), // marker coordinates
+                    position: new google.maps.LatLng(42.392196, -71.105442), // marker coordinates
                     map: map,
                     icon: image,
                     title: 'Hello World!'
                 });
+                //Event: Cambridge Public Library
                 marker3 = new google.maps.Marker({
-                    position: new google.maps.LatLng(41.040807, 28.848071), // marker coordinates
+                    position: new google.maps.LatLng(42.374193, -71.110290), // marker coordinates
                     map: map,
                     icon: image,
                     title: 'Hello World!'
                 });
+                //Event: Manchester Community Center
                 marker4 = new google.maps.Marker({
-                    position: new google.maps.LatLng(41.051164, 29.078097), // marker coordinates
+                    position: new google.maps.LatLng(42.574411, -70.768299), // marker coordinates
                     map: map,
                     icon: image,
                     title: 'Hello World!'
                 });
+                //Event: McDermott, Will & Emery
                 marker5 = new google.maps.Marker({
-                    position: new google.maps.LatLng(41.077050, 28.995013), // marker coordinates
+                    position: new google.maps.LatLng(42.359528, -71.057414), // marker coordinates
                     map: map,
                     icon: image,
                     title: 'Hello World!'
                 });
+                //Event: Edward M. Kennedy Institute
+                marker6 = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.316073, -71.035415), // marker coordinates
+                    map: map,
+                    icon: image,
+                    title: 'Hello World!'
+                });
+                //Event: Wellesley, MA
+                marker7 = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.3093851,-71.2836756), // marker coordinates
+                    map: map,
+                    icon: image,
+                    title: 'Hello World!'
+                });
+                //Event: 200 Portland Street
+                marker8 = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.364807, -71.062180), // marker coordinates
+                    map: map,
+                    icon: image,
+                    title: 'Hello World!'
+                });
+                //Event: Harvard Kennedy School
+                marker9 = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.371236, -71.121906), // marker coordinates
+                    map: map,
+                    icon: image,
+                    title: 'Hello World!'
+                });
+                //Event: Harvard Bookstore
+                marker10 = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.372796, -71.116243), // marker coordinates
+                    map: map,
+                    icon: image,
+                    title: 'Hello World!'
+                });
+                //Event: First Parish Church
+                marker11 = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.374852, -71.119374), // marker coordinates
+                    map: map,
+                    icon: image,
+                    title: 'Hello World!'
+                });
+
+
+
+
+
+
 
                 infowindow = new google.maps.InfoWindow({
                     content: contentString
@@ -661,4 +714,3 @@ $(document).ready(function () {
     }
 
 });
-
