@@ -8,15 +8,7 @@
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
         <title>CivicLink</title>
-=======
-<<<<<<< HEAD
-        <title>CivicLinkJacob</title>
-=======
-        <title>CivicLink 2</title>
->>>>>>> 65af3ed108b1134ca83c23d39f75cc47be16eeff
->>>>>>> f7f30fc364fbe3ff6749f5a6ed13d17d67b48d38
 
         <!-- Favicons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -24,13 +16,11 @@
 
         <!-- CSS Global -->
         <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
         <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
-
         <link href="assets/plugins/owlcarousel2/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="assets/plugins/owlcarousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+        <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
         <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
         <link href="assets/plugins/countdown/jquery.countdown.css" rel="stylesheet">
 
@@ -42,7 +32,7 @@
         <script src="assets/plugins/iesupport/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body id="home" class="wide body-light multipage">
+    <body id="home" class="wide body-light multipage multipage-sub">
 
         <!-- Preloader -->
         <div id="preloader">
@@ -53,7 +43,8 @@
 
         <!-- Wrap all content -->
         <div class="wrapper">
-           <!-- HEADER -->
+
+            <!-- HEADER -->
             <header class="header fixed">
 
                 <!-- Top Line -->
@@ -88,7 +79,7 @@
                         <nav class="navigation closed clearfix">
                             <a href="#" class="menu-toggle btn"><i class="fa fa-bars"></i></a>
                             <ul class="sf-menu nav">
-                                <li class="navigation closed clearfix">
+                                <li>
                                     <a href="index.html">Home</a>
 <!--
                                     <ul>
@@ -107,8 +98,8 @@
                                     </ul>
 -->
                                 </li>
-                                <li  class="navigation closed clearfix">
-                                    <a href="event-grid-jk.html">Events</a>
+                                <li  class="active">
+                                    <a href="event-list.html">Events</a>
 <!--
                                     <ul>
                                         <li><a href="event-list.html">Event List</a></li>
@@ -162,623 +153,1124 @@
             <!-- Content area -->
             <div class="content-area">
 
-                <div id="main">
-                    <!-- SLIDER -->
-                    <section class="page-section no-padding background-img-slider">
-                        <div class="container">
-
-                            <div id="main-slider" class="owl-carousel owl-theme">
-                                <!-- Slide -->
-                                <div class="item page text-center slide5">
-                                    <div class="caption">
-                                        <div class="container">
-                                            <div class="div-table">
-                                                <div class="div-cell">
-                                                    <p class="text-center avatar"><img src="assets/img/preview/slider-4-avatar.png" style="width: auto;" alt=""/></p>
-                                                    <h2 data-animation="fadeInDown" data-animation-delay="100"><span>10 November at 15:00 - 17:00 | Park Ave Congregational Church</span></h2>
-                                                    <h3 class="caption-subtitle" data-animation="fadeInUp" data-animation-delay="300">Listening Across the Political Divide</h3>
-<!--
-                                                    <div class="countdown-wrapper">
-                                                        <div id="defaultCountdown" class="defaultCountdown clearfix"></div>
-                                                    </div>
--->
-                                                    <p class="caption-text">
-                                                        <a class="btn btn-theme btn-theme scroll-to" href="#" data-animation="flipInY" data-animation-delay="600">Find Your Squad</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide -->
-                                <div class="item page text-center slide4">
-                                    <div class="caption">
-                                        <div class="container">
-                                            <div class="div-table">
-                                                <div class="div-cell">
-                                                    <h3 class="caption-subtitle">get linked</h3>
-                                                    <h4><span>Find <a href="#">City Councils</a>,<a href="#">Town Halls</a>, <a href="#">Historic Preservation Meetings</a>, <a href="#">Legislative Summits</a>, <a href="#">Immigration Policy Forums</a>, <a href="#">Planning Boards</a> and more</span></h4>
-                                                    <div class="row">
-                                                        <div class="col-md-8 col-md-offset-2">
-                                                            <form action="#" class="location-search">
-                                                                <div class="form-group">
-                                                                    <div class="input-group">
-                                                                        <input type="text" class="form-control text" placeholder="FIND OPPORTUNITIES"/>
-                                                                        <select class="selectpicker">
-                                                                            <option>MA City</option>
-                                                                            <option>Cambridge</option>
-                                                                            <option>Lynn</option>
-                                                                            <option>Somerville</option>
-                                                                            <option>Waltham</option><option>Wellsely</option>
-
-                                                                        </select>
-                                                                        <button class="form-control button-search"><i class="fa fa-search"></i></button>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                    <p class="caption-text">
-<!--                                                        <a class="btn btn-theme btn-theme btn-theme-dark scroll-to" href="#" data-animation="flipInY" data-animation-delay="600">Popular Events</a>-->
-                                                        <a class="btn btn-theme btn-theme btn-theme-transparent-white" href="http://www.youtube.com/watch?v=O-zpOMYRi0w"  rel="prettyPhoto" data-animation="flipInY" data-animation-delay="900">Newest Events</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </section>
-                    <!-- /SLIDER -->
-                </div>
-
-                <!-- Featured Event -->
-<!--
-                <section class="page-section light featured-line xs-padding">
+                <section class="page-section image breadcrumbs overlay">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="section-title two-lines">
-                                    <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex dark fa-stack-2x"></i><i class="fa fa-calendar fa-stack-1x"></i></span></span>
-                                    <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner"><span class="theme-color"> Featured Event </span><small>Dont Miss The Event. PHP Conference In ISTANBUL</small></span>
-                                </h1>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="countdown-wrapper countdown-featured">
-                                    <div id="defaultCountdown2" class="defaultCountdown clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <a href="#" class="btn btn-theme btn-details">Tickets &amp; Details <i class="fa fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
+                        <h1>EVENT DETAIL PAGE</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li class="active">Event Detail Page</li>
+                        </ul>
                     </div>
                 </section>
--->
-                <!-- /Featured Event -->
+
 
                 <!-- PAGE -->
-                <section class="page-section">
+                <section class="page-section with-sidebar sidebar-right first-section">
                     <div class="container">
 
-                        <div class="clear clearfix overflowed">
-                            <div class="section-title pull-left" style="width: auto;">
-                                <span class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-star fa-stack-1x"></i></span></span>
+                        <!-- Sidebar -->
+                        <aside id="sidebar" class="sidebar col-sm-4 col-md-3">
+
+                            <div class="widget google-map-widget">
+                                <!-- Google map -->
+                                <div class="google-map1">
+                                    <div id="map-canvas1"></div>
+                                </div>
+                                <!-- /Google map -->
+                                <a href="#" class="link"><i class="fa fa-map-marker"></i> Cambridge, MA</a>
                             </div>
-<!--
-                            <ul id="filtrable-events" class="filtrable clearfix">
-                                <li class="all"><a href="#" data-filter="*">All</a></li>
-                                <li class="festival current"><a href="#" data-filter=".festival">Festival</a></li>
-                                <li class="playground"><a href="#" data-filter=".playground">Playground</a></li>
-                                <li class="conferance"><a href="#" data-filter=".conference">Conference</a></li>
-                            </ul>
--->
-                        </div>
 
-                        <div class="row thumbnails events vertical isotope isotope-items">
-
-                            <div class="col-md-6 col-sm-6 isotope-item festival">
-                                <div class="thumbnail no-border no-padding">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="media">
-                                                <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                <img src="assets/img/preview/event-1.jpg" alt="">
-                                                <div class="caption hovered"></div>
+                            <div class="widget">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    Category
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <p>Insert different event categories here</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
-                                            <div class="caption">
-                                                <h3 class="caption-title"><a href="#">Health  &amp; Environmental Committee Hearing</a></h3>
+                                    </div>
+<!--
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Event Type
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <p>Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+-->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Date
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <p>Organize events by date</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    Organization
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="panel-body">
+                                                <p>for listing events by organization</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </aside>
+                        <!-- /Sidebar -->
+
+                        <hr class="page-divider transparent visible-xs"/>
+
+                        <!-- Content -->
+                        <section id="content" class="content col-sm-8 col-md-9">
+
+                            <div class="listing-meta">
+
+                                <div class="filters">
+                                    <a href="#">City Council <i class="fa fa-times"></i></a>
+                                    <a href="#">Historic Preservation  <i class="fa fa-times"></i></a>
+                                    <a href="#">Zoning Appeals <i class="fa fa-times"></i></a>
+                                    <a href="#">Transportation and Public Utilities <i class="fa fa-times"></i></a>
+                                    <a href="#">Immigration Policy <i class="fa fa-times"></i></a>
+                                    <a href="#">Post Election <i class="fa fa-times"></i></a>
+                                </div>
+
+                                <div class="options">
+                                    <a class="byrevelance" href="#">Relevance</a>
+                                    <a class="bydate active" href="#">DATE</a>
+                                    <ul class="list-grid-tabs" role="tablist">
+                                        <li role="presentation"> <a class="view-list" href="#list-view" data-toggle="tab" role="tab" ><i class="fa fa-th-list"></i></a></li>
+                                        <li class="active"  role="presentation"><a class="view-th " href="#grid-view" data-toggle="tab" role="tab"><i class="fa fa-th"></i></a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="tab-content">
+                                <div id="list-view"  class="tab-pane fade" role="tabpanel">
+                                    <div class="thumbnails events vertical">
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Health  &amp; Environmental Committee Hearing</a></h3>
                                                 <p class="caption-category"><i class="fa fa-file-text-o"></i> 13 November at 15:00 - 17:00 | Cambridge, MA</p>
                                                 <p class="caption-price">Open to Public</p>
                                                 <p class="caption-text">City Hall
+                                                                        2nd Floor Sullivan Chamber
+                                                                        795 Massachusetts Ave.
+                                                                        Cambridge, MA 02139</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Cambridge City Council Meeting</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 26 November at 17:30</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          City Hall
+                                                          2nd Floor Sullivan Chamber
+                                                          795 Massachusetts Ave.
+                                                          Cambridge, MA 02139
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Transportation and Public Utilities Committee</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 27 November at 16:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          City Hall
+                                                          2nd Floor Sullivan Chamber
+                                                          795 Massachusetts Ave.
+                                                          Cambridge, MA 02139
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Historic Preservation Meeting</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 27 November at 18:40</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          Visiting Nurses Association
+                                                          259 Lowell St.
+                                                          3rd Floor Conference Room
+                                                          Somerville, MA
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Zoning Appeals</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 28 November at 18:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          Location: TBD
+                                                          Somerville, MA
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Planning Board</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 29 November at 18:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          Location: TBD
+                                                          Somerville, MA
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Conversations on the Edge: After the Midterms</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 29 November at 18:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          Cambridge Center for Adult Education
+                                                          Blacksmith House
+                                                          56 Brattle Street
+                                                          Cambridge, MA 02138
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">City Council Meeting</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 3 December at 17:30</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          City Hall
+                                                          2nd Floor Sullivan Chamber
+                                                          795 Massachusetts Ave.
+                                                          Cambridge, MA 02139
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Checks & Balances: Government, Media, Citizenry</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 3 December at 18:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          Manchester Community Center
+                                                          40 Beach Street
+                                                          Manchester, MA 01944
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Rule Makers, Rule Breakers</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 5 December at 17:30</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          McDermott, Will & Emery
+                                                          28 State Street, Suite 3400
+                                                          Boston, MA 02109
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Getting to the Point with John Kerry</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 6 December at 18:30</p>
+                                                        <p class="caption-price">$35</p>
+                                                        <p class="caption-text">
+                                                          Edward M. Kennedy Institute for the United States Senate
+                                                          210 Morrissey Boulevard
+                                                          Boston, MA 02125
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Can We Bridge the Political Divide</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 16 December at 10:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          Wellesley, MA 02481
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Hide Yo Bits, Hold Yo Rights</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 27 November at 18:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          200 Portland Street
+                                                          Boston, MA 02114
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Book Talk: The Empty Throne: America's Abdication of Global Leadership</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 20 November at 8:30</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          John F. Kennedy School of Government - Littauer Building, Malkin Penthouse, 4th Floor
+                                                          Cambridge, MA
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">The Most Dangerous Branch: Inside the Supreme Court's Assault on the Constitution</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 27 November at 19:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          Harvard Bookstore
+                                                          1256 Massachusetts Ave
+                                                          Cambridge, MA 02138
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Cambridge City Council Meeting</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 26 November at 17:30</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          City Hall
+                                                          2nd Floor Sullivan Chamber
+                                                          795 Massachusetts Ave.
+                                                          Cambridge, MA 02139
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Healing from Hate: How Young Men Get Into--and Out of--Violent Extremism</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 28 November at 19:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          First Parish Church
+                                                          1446 Massachusetts Ave
+                                                          Cambridge, MA 02138
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">The Curse of Bigness: Antitrust in the New Gilded Age</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 29 November at 19:00</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          Harvard Bookstore
+                                                          1256 Massachusetts Ave
+                                                          Cambridge, MA 02138
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+                                        <!--start here-->
+                                        <hr class="page-divider half"/>
+
+                                        <div class="thumbnail no-border no-padding">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-4">
+                                                    <div class="media">
+                                                        <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                        <img src="assets/img/preview/event-1.jpg" alt="">
+                                                        <div class="caption hovered"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9 col-xs-8">
+                                                    <div class="caption">
+                                                        <a href="#" class="pull-right">
+                                                            <span class="fa-stack fa-lg">
+                                                                <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                                                <i class="fa fa-stack-1x fa-share-alt"></i>
+                                                            </span>
+                                                        </a>
+                                                        <h3 class="caption-title"><a href="#">Cambridge City Council Meeting</a></h3>
+                                                        <p class="caption-category"><i class="fa fa-file-text-o"></i> 26 November at 17:30</p>
+                                                        <p class="caption-price">Free</p>
+                                                        <p class="caption-text">
+                                                          City Hall
+                                                          2nd Floor Sullivan Chamber
+                                                          795 Massachusetts Ave.
+                                                          Cambridge, MA 02139
+                                                        </p>
+                                                        <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end here-->
+
+
+
+
+                                    <!-- Pagination -->
+                                    <div class="pagination-wrapper">
+                                        <ul class="pagination">
+                                            <li class="disabled"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /Pagination -->
+                                </div>
+                                <div id="grid-view"  class="tab-pane fade active in" role="tabpanel">
+                                    <div class="row thumbnails events">
+
+                                        <div class="col-md-4 col-sm-6 isotope-item festival">
+                                            <div class="thumbnail no-border no-padding">
+                                                <div class="media">
+                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                    <div class="date">
+                                                        <span>13</span>
+                                                        <span>Nov</span>
+                                                    </div>
+                                                    <img src="assets/img/preview/hotel-1.jpg" alt="">
+                                                    <div class="caption hovered"></div>
+                                                </div>
+                                                <div class="caption">
+                                                    <h3 class="caption-title"><a href="#">Health  &amp; Environmental Committee Hearing</a></h3>
+                                                    <p class="caption-category"><i class="fa fa-file-text-o"></i> 15:00 - 17:00 <i class="fa fa-map-marker"></i> Cambridge, MA</p>
+                                                    <p class="caption-price">Open to Public</p>
+<!--
+                                                    <p class="caption-text">City Hall
                                                     2nd Floor Sullivan Chamber
                                                     795 Massachusetts Ave.
                                                     Cambridge, MA 02139</p>
-                                                <p class="caption-more"><a href="#" class="btn btn-theme"> details</a></p>
+-->
+                                                    <p class="caption-more"><a href="#" class="btn btn-theme">Details</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6 isotope-item conference">
+                                            <div class="thumbnail no-border no-padding">
+                                                <div class="media">
+                                                    <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
+                                                    <div class="date">
+                                                        <span>25</span>
+                                                        <span>Jan</span>
+                                                    </div>
+                                                    <img src="assets/img/preview/hotel-1.jpg" alt="">
+                                                    <div class="caption hovered"></div>
+                                                </div>
+                                                <div class="caption">
+                                                    <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
+                                                    <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October <i class="fa fa-map-marker"></i> Manhattan / New York</p>
+                                                    <p class="caption-price">Tickets from $49,99</p>
+                                                    <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.	</p>
+                                                    <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6 isotope-item miscellaneous">
+                                            <div class="thumbnail no-border no-padding">
+                                                <div class="media">
+                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                    <div class="date">
+                                                        <span>25</span>
+                                                        <span>Jan</span>
+                                                    </div>
+                                                    <img src="assets/img/preview/hotel-1.jpg" alt="">
+                                                    <div class="caption hovered"></div>
+                                                </div>
+                                                <div class="caption">
+                                                    <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
+                                                    <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October <i class="fa fa-map-marker"></i> Manhattan / New York</p>
+                                                    <p class="caption-price">Tickets from $49,99</p>
+                                                    <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.	</p>
+                                                    <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6 isotope-item festival playground">
+                                            <div class="thumbnail no-border no-padding">
+                                                <div class="media">
+                                                    <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
+                                                    <div class="date">
+                                                        <span>25</span>
+                                                        <span>Jan</span>
+                                                    </div>
+                                                    <img src="assets/img/preview/hotel-1.jpg" alt="">
+                                                    <div class="caption hovered"></div>
+                                                </div>
+                                                <div class="caption">
+                                                    <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
+                                                    <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October <i class="fa fa-map-marker"></i> Manhattan / New York</p>
+                                                    <p class="caption-price">Tickets from $49,99</p>
+                                                    <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.	</p>
+                                                    <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6 isotope-item festival conference">
+                                            <div class="thumbnail no-border no-padding">
+                                                <div class="media">
+                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                    <div class="date">
+                                                        <span>25</span>
+                                                        <span>Jan</span>
+                                                    </div>
+                                                    <img src="assets/img/preview/hotel-1.jpg" alt="">
+                                                    <div class="caption hovered"></div>
+                                                </div>
+                                                <div class="caption">
+                                                    <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
+                                                    <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October <i class="fa fa-map-marker"></i> Manhattan / New York</p>
+                                                    <p class="caption-price">Tickets from $49,99</p>
+                                                    <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.	</p>
+                                                    <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6 isotope-item conference playground">
+                                            <div class="thumbnail no-border no-padding">
+                                                <div class="media">
+                                                    <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
+                                                    <div class="date">
+                                                        <span>25</span>
+                                                        <span>Jan</span>
+                                                    </div>
+                                                    <img src="assets/img/preview/hotel-1.jpg" alt="">
+                                                    <div class="caption hovered"></div>
+                                                </div>
+                                                <div class="caption">
+                                                    <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
+                                                    <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October <i class="fa fa-map-marker"></i> Manhattan / New York</p>
+                                                    <p class="caption-price">Tickets from $49,99</p>
+                                                    <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.	</p>
+                                                    <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6 isotope-item festival conference">
+                                            <div class="thumbnail no-border no-padding">
+                                                <div class="media">
+                                                    <a href="#" class="like"><i class="fa fa-heart"></i></a>
+                                                    <div class="date">
+                                                        <span>25</span>
+                                                        <span>Jan</span>
+                                                    </div>
+                                                    <img src="assets/img/preview/hotel-1.jpg" alt="">
+                                                    <div class="caption hovered"></div>
+                                                </div>
+                                                <div class="caption">
+                                                    <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
+                                                    <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October <i class="fa fa-map-marker"></i> Manhattan / New York</p>
+                                                    <p class="caption-price">Tickets from $49,99</p>
+                                                    <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.	</p>
+                                                    <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6 isotope-item playground">
+                                            <div class="thumbnail no-border no-padding">
+                                                <div class="media">
+                                                    <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
+                                                    <div class="date">
+                                                        <span>25</span>
+                                                        <span>Jan</span>
+                                                    </div>
+                                                    <img src="assets/img/preview/hotel-1.jpg" alt="">
+                                                    <div class="caption hovered"></div>
+                                                </div>
+                                                <div class="caption">
+                                                    <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
+                                                    <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October <i class="fa fa-map-marker"></i> Manhattan / New York</p>
+                                                    <p class="caption-price">Tickets from $49,99</p>
+                                                    <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.	</p>
+                                                    <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
 
-                            <div class="col-md-6 col-sm-6 isotope-item conference">
-                                <div class="thumbnail no-border no-padding">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="media">
-                                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                                                <img src="assets/img/preview/event-1.jpg" alt="">
-                                                <div class="caption hovered"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="caption">
-                                                <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
-                                                <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October at 20:00 - 22:00 on Manhattan / New York</p>
-                                                <p class="caption-price">Tickets from $49,99</p>
-                                                <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
-                                                <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
-                                            </div>
-                                        </div>
+                                    <!-- Pagination -->
+                                    <div class="pagination-wrapper">
+                                        <ul class="pagination">
+                                            <li class="disabled"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                                        </ul>
                                     </div>
-
+                                    <!-- /Pagination -->
                                 </div>
                             </div>
-
-                            <div class="col-md-6 col-sm-6 isotope-item miscellaneous">
-                                <div class="thumbnail no-border no-padding">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="media">
-                                                <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                <img src="assets/img/preview/event-1.jpg" alt="">
-                                                <div class="caption hovered"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="caption">
-                                                <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
-                                                <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October at 20:00 - 22:00 on Manhattan / New York</p>
-                                                <p class="caption-price">Tickets from $49,99</p>
-                                                <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
-                                                <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 isotope-item festival playground">
-                                <div class="thumbnail no-border no-padding">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="media">
-                                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                                                <img src="assets/img/preview/event-1.jpg" alt="">
-                                                <div class="caption hovered"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="caption">
-                                                <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
-                                                <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October at 20:00 - 22:00 on Manhattan / New York</p>
-                                                <p class="caption-price">Tickets from $49,99</p>
-                                                <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
-                                                <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 isotope-item festival conference">
-                                <div class="thumbnail no-border no-padding">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="media">
-                                                <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                <img src="assets/img/preview/event-1.jpg" alt="">
-                                                <div class="caption hovered"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="caption">
-                                                <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
-                                                <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October at 20:00 - 22:00 on Manhattan / New York</p>
-                                                <p class="caption-price">Tickets from $49,99</p>
-                                                <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
-                                                <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 isotope-item conference playground">
-                                <div class="thumbnail no-border no-padding">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="media">
-                                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                                                <img src="assets/img/preview/event-1.jpg" alt="">
-                                                <div class="caption hovered"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="caption">
-                                                <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
-                                                <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October at 20:00 - 22:00 on Manhattan / New York</p>
-                                                <p class="caption-price">Tickets from $49,99</p>
-                                                <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
-                                                <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 isotope-item festival conference">
-                                <div class="thumbnail no-border no-padding">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="media">
-                                                <a href="#" class="like"><i class="fa fa-heart"></i></a>
-                                                <img src="assets/img/preview/event-1.jpg" alt="">
-                                                <div class="caption hovered"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="caption">
-                                                <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
-                                                <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October at 20:00 - 22:00 on Manhattan / New York</p>
-                                                <p class="caption-price">Tickets from $49,99</p>
-                                                <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
-                                                <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 isotope-item playground">
-                                <div class="thumbnail no-border no-padding">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="media">
-                                                <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
-                                                <img src="assets/img/preview/event-1.jpg" alt="">
-                                                <div class="caption hovered"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="caption">
-                                                <h3 class="caption-title"><a href="#">Standart Event Name Here</a></h3>
-                                                <p class="caption-category"><i class="fa fa-file-text-o"></i> 15 October at 20:00 - 22:00 on Manhattan / New York</p>
-                                                <p class="caption-price">Tickets from $49,99</p>
-                                                <p class="caption-text">Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
-                                                <p class="caption-more"><a href="#" class="btn btn-theme">Tickets &amp; details</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-center margin-top">
-                            <a data-animation="fadeInUp" data-animation-delay="100" href="event-grid-jk.html" class="btn btn-theme btn-theme-grey-dark btn-theme-md"><i class="fa fa-file-text-o"></i> See all events</a>
-                        </div>
+                        </section>
+                        <!-- /Content -->
 
                     </div>
                 </section>
                 <!-- /PAGE -->
-
-
-                <!-- PAGE -->
-<!--
-                <section class="page-section">
-                    <div class="container">
--->
-<!--
-                        <h1 class="section-title">
-                            <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-file-text-o fa-stack-1x"></i></span></span>
-                            <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">Recent Blog Posts <small> / get news!</small></span>
-                        </h1>
-                        <div class="post-row">
-                            <div class="carousel-slider">
-                                <div class="owl-carousel slide-3">
--->
-                                    <!-- -->
-<!--
-                                    <div>
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="100">
-                                            <div class="post-media">
-                                                <div class="post-type">
-                                                    <i class="fa fa-video-camera"></i>
-                                                </div>
-                                                <img src="assets/img/preview/recent-post-1.jpg" alt=""/>
-                                            </div>
-                                            <div class="post-header">
-                                                <h2 class="post-title"><a href="#">Standart Blog Post Header Here</a></h2>
-                                                <div class="post-meta">
-                                                    <span class="post-date">
-                                                        Posted on
-                                                        <span class="day">17th</span>
-                                                        <span class="month">May</span>
-                                                        <span class="year">2015</span>
-                                                    </span>
-                                                    <span class="pull-right">
-                                                        <i class="fa fa-comment"></i> <a href="#">12</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="post-body">
-                                                <div class="post-excerpt">
-                                                    <p>Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-footer"></div>
-                                        </article>
-                                    </div>
--->
-
-                                    <!-- -->
-<!--
-                                    <div>
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
-                                            <div class="post-media">
-                                                <div class="post-type">
-                                                    <i class="fa fa-photo"></i>
-                                                </div>
-                                                <img src="assets/img/preview/recent-post-2.jpg" alt=""/>
-                                            </div>
-                                            <div class="post-header">
-                                                <h2 class="post-title"><a href="#">Standart Blog Post Header Here</a></h2>
-                                                <div class="post-meta">
-                                                    <span class="post-date">
-                                                        Posted on
-                                                        <span class="day">17th</span>
-                                                        <span class="month">May</span>
-                                                        <span class="year">2015</span>
-                                                    </span>
-                                                    <span class="pull-right">
-                                                        <i class="fa fa-comment"></i> <a href="#">12</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="post-body">
-                                                <div class="post-excerpt">
-                                                    <p>Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-footer"></div>
-                                        </article>
-                                    </div>
--->
-
-                                    <!-- -->
-<!--
-                                    <div>
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="500">
-                                            <div class="post-media">
-                                                <div class="post-type">
-                                                    <i class="fa fa-music"></i>
-                                                </div>
-                                                <img src="assets/img/preview/recent-post-3.jpg" alt=""/>
-                                            </div>
-                                            <div class="post-header">
-                                                <h2 class="post-title"><a href="#">Standart Blog Post Header Here</a></h2>
-                                                <div class="post-meta">
-                                                    <span class="post-date">
-                                                        Posted on
-                                                        <span class="day">17th</span>
-                                                        <span class="month">May</span>
-                                                        <span class="year">2015</span>
-                                                    </span>
-                                                    <span class="pull-right">
-                                                        <i class="fa fa-comment"></i> <a href="#">12</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="post-body">
-                                                <div class="post-excerpt">
-                                                    <p>Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-footer"></div>
-                                        </article>
-                                    </div>
--->
-
-                                    <!-- -->
-<!--
-                                    <div>
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="500">
-                                            <div class="post-media">
-                                                <div class="post-type">
-                                                    <i class="fa fa-music"></i>
-                                                </div>
-                                                <img src="assets/img/preview/recent-post-1.jpg" alt=""/>
-                                            </div>
-                                            <div class="post-header">
-                                                <h2 class="post-title"><a href="#">Standart Blog Post Header Here</a></h2>
-                                                <div class="post-meta">
-                                                    <span class="post-date">
-                                                        Posted on
-                                                        <span class="day">17th</span>
-                                                        <span class="month">May</span>
-                                                        <span class="year">2015</span>
-                                                    </span>
-                                                    <span class="pull-right">
-                                                        <i class="fa fa-comment"></i> <a href="#">12</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="post-body">
-                                                <div class="post-excerpt">
-                                                    <p>Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-footer"></div>
-                                        </article>
-                                    </div>
--->
-
-                                    <!-- -->
-<!--
-                                    <div>
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="500">
-                                            <div class="post-media">
-                                                <div class="post-type">
-                                                    <i class="fa fa-music"></i>
-                                                </div>
-                                                <img src="assets/img/preview/recent-post-2.jpg" alt=""/>
-                                            </div>
-                                            <div class="post-header">
-                                                <h2 class="post-title"><a href="#">Standart Blog Post Header Here</a></h2>
-                                                <div class="post-meta">
-                                                    <span class="post-date">
-                                                        Posted on
-                                                        <span class="day">17th</span>
-                                                        <span class="month">May</span>
-                                                        <span class="year">2015</span>
-                                                    </span>
-                                                    <span class="pull-right">
-                                                        <i class="fa fa-comment"></i> <a href="#">12</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="post-body">
-                                                <div class="post-excerpt">
-                                                    <p>Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-footer"></div>
-                                        </article>
-                                    </div>
--->
-
-                                    <!-- -->
-<!--
-                                    <div>
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="500">
-                                            <div class="post-media">
-                                                <div class="post-type">
-                                                    <i class="fa fa-music"></i>
-                                                </div>
-                                                <img src="assets/img/preview/recent-post-3.jpg" alt=""/>
-                                            </div>
-                                            <div class="post-header">
-                                                <h2 class="post-title"><a href="#">Standart Blog Post Header Here</a></h2>
-                                                <div class="post-meta">
-                                                    <span class="post-date">
-                                                        Posted on
-                                                        <span class="day">17th</span>
-                                                        <span class="month">May</span>
-                                                        <span class="year">2015</span>
-                                                    </span>
-                                                    <span class="pull-right">
-                                                        <i class="fa fa-comment"></i> <a href="#">12</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="post-body">
-                                                <div class="post-excerpt">
-                                                    <p>Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-footer"></div>
-                                        </article>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center margin-top">
-                            <a data-animation="flipInY" data-animation-delay="100" href="blog.html" class="btn btn-theme btn-theme-grey-dark btn-theme-md"><i class="fa fa-file-text-o"></i> &nbsp;See all news</a>
-                        </div>
-                    </div>
-                </section>
--->
-                <!-- /PAGE -->
-
-                <!-- PAGE -->
-                <section class="page-section light create-new-event">
-                    <div class="container text-center">
-                        <h1 class="section-title">Have an opportunity to share?</h1>
-                        <p>Find </p>
-                        <div><a href="#" class="btn btn-theme btn-theme-md">SUBMIT EVENT</a></div>
-                    </div>
-                </section>
-                <!-- /PAGE -->
-
-                <!-- PAGE LOCATION -->
-                <section class="page-section" id="location">
-                    <div class="container full-width gmap-background">
-
-                        <div class="container">
-                            <div class="on-gmap color">
-                                <h1 class="section-title">
-                                    <span data-animation="flipInY" data-animation-delay="100" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-map-marker fa-stack-1x"></i></span></span>
-                                    <span data-animation="fadeInRight" data-animation-delay="100" class="title-inner">Event Location</span>
-                                </h1>
-                                <p data-animation="fadeInUp" data-animation-delay="200" class="text-uppercase">Apple Store SOHO‎ <br/>
-                                    103 Prince St New York, <br/>
-                                    NY 10012, United States <br/>
-                                    +1 212-226-3126</p>
-                                <p><a href="mailto:youremail@domain.com">hello@imevent.com</a></p>
-                                <a href="#" class="btn btn-theme"
-                                   data-animation="flipInY" data-animation-delay="300">Get Direction <i class="fa fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- Google map -->
-                        <div class="google-map">
-                            <div id="map-canvas"></div>
-                        </div>
-                        <!-- /Google map -->
-
-                    </div>
-                </section>
-                <!-- /PAGE LOCATION -->
-
 
             </div>
             <!-- /Content area -->
 
             <!-- FOOTER -->
+<!--
             <footer class="footer">
-                <div class="footer-meta">
-                    <div class="container text-center">
-                        <div class="clearfix">
-                            <ul class="social-line list-inline">
-                                <li data-animation="flipInY" data-animation-delay="100"><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li data-animation="flipInY" data-animation-delay="200"><a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
-                                <li data-animation="flipInY" data-animation-delay="300"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li data-animation="flipInY" data-animation-delay="400"><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
-                                <li data-animation="flipInY" data-animation-delay="500"><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                <li data-animation="flipInY" data-animation-delay="600"><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
-                                <li data-animation="flipInY" data-animation-delay="700"><a href="#" class="skype"><i class="fa fa-skype"></i></a></li>
-                            </ul>
+                <div class="footer-widgets">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="widget widget-about">
+                                    <h4 class="widget-title">About Us</h4>
+                                    <p>Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
+                                    <address>
+                                        <div><i class="fa fa-phone"></i>+90 555 55 55</div>
+                                        <div><i class="fa fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></div>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="widget widget-categories">
+                                    <h4 class="widget-title">Popular searches</h4>
+                                    <ul>
+                                        <li><a href="#">Online Registration</a></li>
+                                        <li><a href="#">Sell Event Tickets</a></li>
+                                        <li><a href="#">Post Events</a></li>
+                                        <li><a href="#">Event Planning Software</a></li>
+                                        <li><a href="#">Online Event Management</a></li>
+                                        <li><a href="#">Event Management Software</a></li>
+                                        <li><a href="#">Event Payment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="widget widget-twitter">
+                                    <h4 class="widget-title">Recent Tweets</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">@isamercan</a> Cupcake chocolate cake sweet roll. Gummies macaroon biscuit cupcake candy dragée. <a href="#">#Conference about 2 hours ago</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">@isamercan</a> Cupcake chocolate cake sweet roll. Gummies macaroon biscuit cupcake candy dragée. <a href="#">#Conference about 2 hours ago</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="widget widget-flickr-feed">
+                                    <h4 class="widget-title"><span>Instagram Photos</span></h4>
+                                    <ul>
+                                        <li><a href="#"><img src="assets/img/preview/sidebar-1.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/img/preview/sidebar-2.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/img/preview/sidebar-3.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/img/preview/sidebar-4.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/img/preview/sidebar-5.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/img/preview/sidebar-6.jpg" alt=""></a></li>
+                                        li><a href="#"><img src="assets/img/preview/sidebar-7.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/img/preview/sidebar-8.jpg" alt=""></a></li
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
-                        <span class="copyright" data-animation="fadeInUp" data-animation-delay="100">&copy; &#8212; made by jThemes Studio</span>
+                    </div>
+                </div>
+                <div class="footer-meta footer-meta-alt">
+                    <div class="container">
+-->
+<!--
+
+                        <div class="row">
+                            <div class="col-md-9 col-sm-6">
+                                <ul class="footer-menu">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">Developers</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Cookies</a></li>
+                                    <li>All Rights Reserved</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <form action="#" class="country-select">
+                                    <div class="form-group">
+                                        <select class="selectpicker" data-width="100%">
+                                            <option>Select Your Country</option>
+                                            <option>Select Your Country</option>
+                                            <option>Select Your Country</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </footer>
+-->
             <!-- /FOOTER -->
 
             <div class="to-top"><i class="fa fa-angle-up"></i></div>
 
 
         </div>
+        <!-- /Wrap all content -->
+
         <!-- Popup: Login -->
         <div class="modal fade login-register" id="popup-login" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" id="main-slider">
+            <div class="modal-dialog modal-lg">
                 <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
                 <div class="form-background">
                     <div class="col-sm-6 popup-form">
                         <div class="form-header color">
@@ -847,90 +1339,82 @@
         </div>
         <!-- /Popup: Login -->
 
+        <!-- JS Global -->
 
+        <!--[if lt IE 9]><script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script><![endif]-->
+        <script src="assets/plugins/jquery/jquery-2.1.1.min.js"></script>
+        <script src="assets/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="assets/plugins/modernizr.custom.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+        <script src="assets/plugins/superfish/js/superfish.js"></script>
+        <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+        <script src="assets/plugins/placeholdem.min.js"></script>
+        <script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+        <script src="assets/plugins/jquery.easing.min.js"></script>
+        <script src="assets/plugins/smooth-scrollbar.min.js"></script>
 
-    <!-- /Wrap all content -->
+        <!-- JS Page Level -->
+        <script src="assets/plugins/owlcarousel2/owl.carousel.min.js"></script>
+        <script src="assets/plugins/waypoints/waypoints.min.js"></script>
+        <script src="assets/plugins/countdown/jquery.plugin.min.js"></script>
+        <script src="assets/plugins/countdown/jquery.countdown.min.js"></script>
+        <script src="assets/plugins/isotope/jquery.isotope.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 
-    <!-- JS Global -->
+        <!--<script src="assets/js/theme-ajax-mail.js"></script>-->
+        <script src="assets/js/theme.js"></script>
 
-    <!--[if lt IE 9]><script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script><![endif]-->
+        <script type="text/javascript">
+            "use strict";
+            jQuery(document).ready(function () {
+                theme.init();
+                theme.initMainSlider();
+                theme.initCountDown();
+                theme.initPartnerSlider2();
+                theme.initImageCarousel();
+                theme.initTestimonials();
+                theme.initGoogleMap();
+            });
+            jQuery(window).load(function () {
+                theme.initAnimation();
+            });
 
-    <script src="assets/plugins/jquery/jquery-2.1.1.min.js"></script>
-    <script src="assets/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-    <script src="assets/plugins/modernizr.custom.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
-    <script src="assets/plugins/superfish/js/superfish.js"></script>
-    <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
-    <script src="assets/plugins/placeholdem.min.js"></script>
-    <script src="assets/plugins/jquery.smoothscroll.min.js"></script>
-    <script src="assets/plugins/jquery.easing.min.js"></script>
-    <script src="assets/plugins/smooth-scrollbar.min.js"></script>
+            jQuery(window).load(function () {
+                jQuery('body').scrollspy({offset: 100, target: '.navigation'});
+            });
+            jQuery(window).load(function () {
+                jQuery('body').scrollspy('refresh');
+            });
+            jQuery(window).resize(function () {
+                jQuery('body').scrollspy('refresh');
+            });
 
-    <!-- JS Page Level -->
-    <script src="assets/plugins/owlcarousel2/owl.carousel.min.js"></script>
-    <script src="assets/plugins/waypoints/waypoints.min.js"></script>
-    <script src="assets/plugins/countdown/jquery.plugin.min.js"></script>
-    <script src="assets/plugins/countdown/jquery.countdown.min.js"></script>
-    <script src="assets/plugins/isotope/jquery.isotope.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+            jQuery(document).ready(function () {
+                theme.onResize();
+            });
+            jQuery(window).load(function () {
+                theme.onResize();
+            });
+            jQuery(window).resize(function () {
+                theme.onResize();
+            });
 
-    <!--<script src="assets/js/theme-ajax-mail.js"></script>-->
-    <script src="assets/js/theme.js"></script>
-
-
-
-    <script type="text/javascript">
-        "use strict";
-        jQuery(document).ready(function () {
-            theme.init();
-            theme.initMainSlider();
-            theme.initCountDown();
-            theme.initPartnerSlider();
-            theme.initTestimonials();
-            theme.initCorouselSlider4();
-            theme.initCorouselSlider3();
-            theme.initGoogleMap();
-        });
-        jQuery(window).load(function () {
-            theme.initAnimation();
-        });
-
-        jQuery(window).load(function () {
-            jQuery('body').scrollspy({offset: 100, target: '.navigation'});
-        });
-        jQuery(window).load(function () {
-            jQuery('body').scrollspy('refresh');
-        });
-        jQuery(window).resize(function () {
-            jQuery('body').scrollspy('refresh');
-        });
-
-        jQuery(document).ready(function () {
-            theme.onResize();
-        });
-        jQuery(window).load(function () {
-            theme.onResize();
-        });
-        jQuery(window).resize(function () {
-            theme.onResize();
-        });
-
-        jQuery(window).load(function () {
-            if (location.hash != '') {
-                var hash = '#' + window.location.hash.substr(1);
-                if (hash.length) {
-                    jQuery('html,body').delay(0).animate({
-                        scrollTop: jQuery(hash).offset().top - 44 + 'px'
-                    }, {
-                        duration: 1200,
-                        easing: "easeInOutExpo"
-                    });
+            jQuery(window).load(function () {
+                if (location.hash != '') {
+                    var hash = '#' + window.location.hash.substr(1);
+                    if (hash.length) {
+                        jQuery('html,body').delay(0).animate({
+                            scrollTop: jQuery(hash).offset().top - 44 + 'px'
+                        }, {
+                            duration: 1200,
+                            easing: "easeInOutExpo"
+                        });
+                    }
                 }
-            }
-        });
+            });
 
-    </script>
+        </script>
 
-</body>
+    </body>
 </html>
