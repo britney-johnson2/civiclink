@@ -533,28 +533,28 @@ $(document).ready(function () {
                     position: new google.maps.LatLng(42.367292, -71.105660), // marker coordinates
                     map: map,
                     icon: image,
-                    title: 'Hello World!'
+                    title: 'Cambridge City Hall'
                 });
                 //Event at Visiting nurses association
                 marker2 = new google.maps.Marker({
                     position: new google.maps.LatLng(42.392196, -71.105442), // marker coordinates
                     map: map,
                     icon: image,
-                    title: 'Hello World!'
+                    title: 'Visiting Nurses Association'
                 });
                 //Event: Cambridge Public Library
                 marker3 = new google.maps.Marker({
                     position: new google.maps.LatLng(42.374193, -71.110290), // marker coordinates
                     map: map,
                     icon: image,
-                    title: 'Hello World!'
+                    title: 'Cambridge Public Library'
                 });
                 //Event: Manchester Community Center
                 marker4 = new google.maps.Marker({
                     position: new google.maps.LatLng(42.574411, -70.768299), // marker coordinates
                     map: map,
                     icon: image,
-                    title: 'Hello World!'
+                    title: 'Manchester Community Center'
                 });
                 //Event: McDermott, Will & Emery
                 marker5 = new google.maps.Marker({
@@ -575,7 +575,7 @@ $(document).ready(function () {
                     position: new google.maps.LatLng(42.3093851,-71.2836756), // marker coordinates
                     map: map,
                     icon: image,
-                    title: 'Hello World!'
+                    title: 'Wellesley, MA'
                 });
                 //Event: 200 Portland Street
                 marker8 = new google.maps.Marker({
@@ -589,14 +589,14 @@ $(document).ready(function () {
                     position: new google.maps.LatLng(42.371236, -71.121906), // marker coordinates
                     map: map,
                     icon: image,
-                    title: 'Hello World!'
+                    title: 'Harvard Kennedy School'
                 });
                 //Event: Harvard Bookstore
                 marker10 = new google.maps.Marker({
                     position: new google.maps.LatLng(42.372796, -71.116243), // marker coordinates
                     map: map,
                     icon: image,
-                    title: 'Hello World!'
+                    title: 'Harvard Bookstore'
                 });
                 //Event: First Parish Church
                 marker11 = new google.maps.Marker({
